@@ -59,7 +59,8 @@ body{
 .heroe img{
   height: 320px;
   width: auto;
-
+  clip-path: polygon(0 18%, 20% 20%, 78%
+                     71%, 63% 100%, 5% 80%);
 }
 .heroe h1{
   width: 100%;
