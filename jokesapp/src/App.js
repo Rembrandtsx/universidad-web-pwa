@@ -17,7 +17,7 @@ function App() {
       const ak = "0ee2c229433f936f2ba9c574815fe003";
       const pk = "d5b24238f22b25c8ab8b7b39518408236066b5aa";
       const params = `?ts=${ts}&apikey=${ak}&hash=${md5(ts + pk + ak)}`;
-      const URL = `http://gateway.marvel.com/v1/public/characters${params}`;
+      const URL = `https://gateway.marvel.com/v1/public/characters${params}`;
       fetch(URL)
         .then((res) => res.json())
         .then((res) => {
